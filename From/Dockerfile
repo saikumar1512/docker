@@ -1,1 +1,1 @@
-From almalinux
+From almalinux:latest

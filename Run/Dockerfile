@@ -1,2 +1,2 @@
 FroM almalinux:latest
-RUN yum install nginx
+RUN yum install nginx -y

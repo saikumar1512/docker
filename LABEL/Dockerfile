@@ -1,4 +1,4 @@
-FROM almalinux:linux
+FROM almalinux:latest
 RUN yum install nginx -y
 CMD ["nginx", "-g", "daemon off;" ]
 LABEL AUTHOR="Saikumar" \

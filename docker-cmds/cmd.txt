@@ -1,0 +1,82 @@
+1  yum update -y
+    2  yum install git -y
+    3  sudo amazon-linux-extras install docker
+    4  sudo install docker
+    5  yum install docker
+    6  sudo service docker start
+    7  sudo systemctl enable docker
+    8  sudo usermod -a -G docker ec2-user
+    9  ls
+   10  git clone https://github.com/saikumar1512/docker.git
+   11  ls
+   12  cd docker/
+   13  ls
+   14  ll
+   15  ls
+   16  git pull origin master
+   17  git pull
+   18  ls
+   19  ls
+   20  docker run -it nginx
+   21  docker run -itd nginx
+   22  docker ps
+   23  docker images
+   24  docker inspect 14d1475ac9bc
+   25  docker //var/lib/docker/
+   26  docker /var/lib/docker/
+   27  docker /var/lib/docker
+   28  ls
+   29  docker ps
+   30  docker 14d1475ac9bc bash
+   31  cd /var/lib/docker/overlay2/91daf58de42deee046c86e6996f4b8d4d63dc6d9a73286969bd8269f815335fa/work
+   32  ls
+   33  cd work/
+   34  ls
+   35  ll
+   36  cd ..
+   37  ls
+   38  cd ..
+   39  cd ..
+   40  cd /home/ec2-user/
+   41  ls
+   42  cd docker/
+   43  ls
+   44  docker volume create nginx
+   45  docker ps volumes
+   46  docker ps volume
+   47  docker volumes
+   48  docker volume
+   49  docker volume ls
+   50  docker volume inspect nginx
+   51  cd /var/lib/docker/volumes/nginx/
+   52  ls
+   53  docker docker ps
+   54  docker ps
+   55  docker rm -f 14d1475ac9bc
+   56  ls
+   57  docker run -d -v nginx:/usr/share/nginx/html -p 80:80 nginx
+   58  docker ps
+   59  pwd
+   60  ls
+   61  cd _data/
+   62  ls
+   63  echo "hello docker" > hello.html
+   64  ls
+   65  docke ps
+   66  docker ps
+   67  docker rm -f e59951e489d4
+   68  ls
+   69  docker run -d -v nginx:/usr/share/nginx/html -p 80:80 nginx
+   70  cd /home/ec2-user/
+   71  mkdir test-vol
+   72  ls
+   73  docker run -d -v /home/ec2-user/test-vol:/usr/share/nginx/html -p 8080:80 nginx
+   74  ls
+   75  cd test-vol/
+   76  ls
+   77  echo "hi" > hi.html
+   78  ls
+   79  docker ps
+   80  docker rm -f 3f2932a1f900
+   81  docker run -d -v /home/ec2-user/test-vol:/usr/share/nginx/html -p 8080:80 nginx
+   82  history

@@ -80,3 +80,210 @@
    80  docker rm -f 3f2932a1f900
    81  docker run -d -v /home/ec2-user/test-vol:/usr/share/nginx/html -p 8080:80 nginx
    82  history
+history
+   84  exit
+   85  ls
+   86  cd docker/
+   87  ls
+   88  git pull origin
+   89  ls
+   90  cd Roboshop/
+   91  ls
+   92  cd web/
+   93  ls
+   94  ls
+   95  docker ps
+   96  docker ps -a
+   97  docker rmi
+   98  docker rmi ba6c87c1d3aa 2cb0bd95dbc3
+   99  docker rm ba6c87c1d3aa 2cb0bd95dbc3
+  100  docker ps
+  101  docker images
+  102  docker rmi 97662d24417b c013d3763e14
+  103  docker images
+  104  docker images ls
+  105  docker build -t web:v1 .
+  106  cat Dockerfile
+  107  git pull origin
+  108  ls
+  109  cat Dockerfile
+  110  docker images
+  111  docker rmi 455ec3cbfbea
+  112  docker build -t web:v1 .
+  113  docker run -d -p 80:80 web:v1
+  114  git pull origin
+  115  ls
+  116  cd ..
+  117  cd mongo/
+  118  ls
+  119  docker build -t mongo:v1 .
+  120  docker run -d mongo:v1
+  121  docker ps
+  122  cd ..
+  123  ls
+  124  cd catalogue/
+  125  ls
+  126  docker build -t catalogue:v1 .
+  127  docker run -d catalogue:v1
+  128  docker ps
+  129  docker logs 590d0d350097
+  130  ls
+  131  docker ps
+  132  docker rm -f `docker ps -a -q`
+  133  ls
+  134  docker run -d --name mongodb mongodb:v1
+  135  docker images
+  136  docker rmi mongo
+  137  docker rmi mongo:v1
+  138  cd ../mongo/
+  139  docker build -t mongodb:v1 .
+  140  docker images
+  141  docker pas
+  142  docker run -d --name mongodb mongodb:v1
+  143  docker run -d --name catalogue catalogue:v1
+  144  docker logs catalogue
+  145  docker ps
+  146  docker log catalogue
+  147  docker logs catalogue
+  148  docker exec -it catalogue bash
+  149  docker inspect mongodb | grep -i ip
+  150  docker exec -it catalogue bash
+  151  docker network ls
+  152  ip -a
+  153  docker rm -f `docker ps -a -q`
+  154  ls
+  155  docker create network roboshop
+  156  docker network create roboshop
+  157  docker network ls
+  158  ip a
+  159  docker run -d --name mongodb mongodb:v1
+  160  docker inspect mongodb:v1
+  161  docker inspect mongodb
+  162  docker network ls
+  163  docker network connect roboshop mongodb
+  164  docker inspect mongobd
+  165  docker inspect mongobd
+  166  docker inspect mongodb
+  167  docker network ls
+  168  ls
+  169  docker run -d --name catalogue --network roboshop catalogue:v1
+  170  docker inspect catalogue
+  171  docker network ls
+  172  ls
+  173  docke logs cataloguew
+  174  docke logs catalogue
+  175  docker logs catalogue
+  176  docker ps
+  177  git pull
+  178  ls
+  179  cd ../web/
+  180  ls
+  181  doker built -t web:v1 .
+  182  docker build -t web:v1 .
+  183  docker images
+  184  docker  rmi 1da91b480332
+  185  docker images
+  186  docker ps
+  187  docker run -d -p 80:80 --name web --network roboshop wev:v1
+  188  docker run -d -p 80:80 --name web --network roboshop web:v1
+  189  docker ps
+  190  docker run -d -p 80:80 --name web --network roboshop web:v1
+  191  dcoker ps
+  192  docker ps
+  193  docker images
+  194  docker rmi web:v1
+  195  docker ps -a
+  196  docker rm d8352b99c324
+  197  dcoker rmi web:v1
+  198  docker rmi web:v1
+  199  git pull
+  200  docker build -t web:v1 .
+  201  ls
+  202  docker run -d -p 80:80 --name web --network roboshop web:v1
+  203  docker ps
+  204  docker ps
+  205  dcoker logs catalogue
+  206  docker logs catalogue
+  207  docker ps
+  208  docker inspect mongodn bash
+  209  docker inspect mongodb bash
+  210  docker exec mongobd
+  211  docker exec -td mongobd
+  212  docker exec -it mongodb bash
+  213  git pull
+  214  docker rm -f `docker ps -a -q`
+  215  docker rmi *
+  216  docker images
+  217  docker rmi 1c51276cba44 2b76c44b8008 324bd4b7597b
+  218  docker ps
+  219  docker images
+  220  docker build -t web:v1 .
+  221  cd ..
+  222  cd catalogue/
+  223  docker build -t catalogue:v1 .
+  224  cd ../mongo/
+  225  docker build -t mongo:v1 .
+  226  docker images
+  227  docker rmi mongo
+  228  docker rmi mongo:v1
+  229  docker build -t mongodb:v1 .
+  230  docker run -d -p 80:80 --name web --network roboshop web:v1
+  231  docker run -d --name mongodb --network roboshop mongodb:v1
+  232  docker run -d --name catalogue --network roboshop catalogue:v1
+  233  docker ps
+  234  docker ps -a
+  235  docker rm -f 30c0f85ff1b5
+  236  docker ps -a
+  237  docker ps
+  238  docker run -d -p 80:80 --name web --network roboshop web:v1
+  239  docker ps
+  240  docker logs web
+  241  docker exec -it web bash
+  242  docker images
+  243  docker rmi c3cd1e35ae8a
+  244  docker ps
+  245  docker rm -f 3e5128543487
+  246  docker ps
+  247  docker rmi c3cd1e35ae8a
+  248  dcoker ps -a
+  249  docker ps -a
+  250  docker images
+  251  docker rmi -f c3cd1e35ae8a
+  252  docker rm -f 44455c906192
+  253  docker rm -f `docker ps -a -q`
+  254  docker rmi c3cd1e35ae8a ebdc9823655c 1c51276cba44
+  255  ls
+  256  docker pull
+  257  git pull
+  258  docker build -t mongodb:v1 .
+  259  cd ../catalogue/
+  260  docker build -t catalogue:v1 .
+  261  cd ../web/
+  262  docker build -t web:v1 .
+  263  docker run -d --name mongodb --network roboshop mongodb:v1
+  264  docker run -d --name catalogue --network roboshop catalogue:v1
+  265  docker run -d -p 80:80 --name web --network roboshop web:v1
+  266
+  267  git pull
+  268  cd ../user/
+  269  ls
+  270  docker build -t user:v1 .
+  271  docker run -d -p 80:80 --name user --network roboshop user:v1
+  272  docker run -d --name user --network roboshop user:v1
+  273  docker ps
+  274  docker ps -a
+  275  docker rm -f 7ebc93051a31
+  276  docker run -d --name user --network roboshop user:v1
+  277  git pull
+  278  docker ps
+  279  docker rm -f web
+  280  docker ps
+  281  docker images
+  282  docker rmi web :v1
+  283  docker rmi web:v1
+  284  cd ../web/
+  285  docker build -t web:v1 .
+  286  docker run -d -p 80:80 --name web --network roboshop web:v1
+  287  sudo curl -L https://github.com/docker/compose/releases/latest/download/                                               docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
+  288  sudo chmod +x /usr/local/bin/docker-compose
+  289  history
